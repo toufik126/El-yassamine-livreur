@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Yassamine BIO Livreur</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 data-i18n="title">طلبات اليوم</h1>
+    <select id="language-switcher">
+      <option value="ar">العربية</option>
+      <option value="fr">Français</option>
+      <option value="en">English</option>
+    </select>
+  </header>
+
+  <main>
+    <section id="orders-section">
+      <!-- Cards of orders will appear here -->
+    </section>
+
+    <button id="add-order-btn" data-i18n="add_order">➕ إضافة طلب يدوي</button>
+    <input type="file" id="screenshot-upload" accept="image/*">
+  </main>
+
+  <footer>
+    <button onclick="showStats()" data-i18n="statistics">📊 الإحصائيات</button>
+    <button onclick="showAutoReply()" data-i18n="auto_reply">💬 الرد التلقائي</button>
+  </footer>
+
+  <script src="app.js"></script>
+  <script src="ocr.js"></script>
+</body>
+</html>
